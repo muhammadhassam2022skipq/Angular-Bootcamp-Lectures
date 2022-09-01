@@ -1,0 +1,13 @@
+<li [ngClass]="(toDoItem?.isCompleted ?? false) ? 'list-group-item-success' : ''" class="list-group-item">
+  <div class="row mt-3">
+    <div class="col-md-6">
+      {{toDoItem?.dueDate}} | {{toDoItem?.taskName}}
+    </div>
+    <div class="col-md-4">
+      <button type="button" class="btn btn-primary">Delete</button>
+    </div>
+    <div class="col-md-4">
+      <input type="checkbox" (change)="onStatusChange(chkCompleted)" #chkCompleted class="form-check-input" id="chkCompleted">
+    </div>
+  </div>
+</li>

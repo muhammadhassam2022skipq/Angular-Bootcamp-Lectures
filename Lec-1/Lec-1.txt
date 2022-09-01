@@ -1,0 +1,22 @@
+React
+Angular -> TypeScript
+Vue
+
+TypeScript -> Superset of JavaScript
+strongly typed / not strogly typed
+
+1- Install angular cli
+2- create angular project
+3- run angular application
+4- How angular application gets loaded and starts
+
+1- Index.html is served by server to browser
+2- Browser downloads the scripts embeded in index.html
+3- Then execute those scripts
+	a- main.ts
+	b- Main Module
+	c- Root Component
+Data Binding
+	1- String interpolation {{varaible}}
+	2- Property Binding
+	3- Event Binding

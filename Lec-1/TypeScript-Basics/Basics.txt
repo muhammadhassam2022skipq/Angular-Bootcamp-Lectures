@@ -1,0 +1,29 @@
+// export class Person {
+//   private _firstName: String;
+//   private _lastName: String;
+//   constructor(
+//     firstName: String,
+//     lastName: String
+//   ){
+//     this._firstName = firstName;
+//     this._lastName = lastName;
+//   }
+//   public getName(): String {
+//     return `${this._firstName} ${this._lastName}`;
+//   }
+// }
+export interface Person {
+  firstName: String;
+  lastName: String;
+
+  getName(): String;
+}
+export class Student implements Person {
+  constructor(public firstName: String = '', public lastName: String = '') {}
+  public getName(): String {
+    return `${this.firstName} ${this.lastName}`;
+  }
+  public getAge(): Number {
+    return 12;
+  }
+}

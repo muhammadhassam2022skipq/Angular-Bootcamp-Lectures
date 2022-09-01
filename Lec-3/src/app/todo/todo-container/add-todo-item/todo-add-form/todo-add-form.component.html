@@ -1,0 +1,15 @@
+<form>
+  <div class="form-group">
+    <label for="txtTaskName">Task Name</label>
+    <input type="text" class="form-control" #txtTaskName id="txtTaskName" name="txtTaskName" placeholder="What do you want to do?">
+  </div>
+  <div class="form-group">
+    <label for="txtDueDate">Due Date</label>
+    <input type="date" class="form-control" #txtDueDate id="txtDueDate" name="txtDueDate" placeholder="When do you want to finish?">
+  </div>
+  <div class="form-group form-check">
+    <input type="checkbox" #chkCompleted class="form-check-input" id="chkCompleted">
+    <label class="form-check-label" for="chkCompleted">Is Already Done?</label>
+  </div>
+  <button type="button" (click)="onBtnAddToDoItemClick()" class="btn btn-primary">Add Task</button>
+</form>
