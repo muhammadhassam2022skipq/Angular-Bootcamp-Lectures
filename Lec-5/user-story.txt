@@ -1,0 +1,9 @@
+I want to login into system.
+And in case of forgot password.
+I must be able to reset my password.
+Once I logged into system.
+I must be displayed my dashboard.
+
+app -> navigation, footer
+accounts -> 
+dashboard -> 
