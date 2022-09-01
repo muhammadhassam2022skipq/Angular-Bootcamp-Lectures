@@ -1,0 +1,20 @@
+<form>
+  <div class="form-group">
+    <label for="exampleInputFullName">First Name</label>
+    <input type="text" class="form-control" #txtFirstName id="txtFirstName" aria-describedby="emailHelp" placeholder="First name">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputFullName">Last Name</label>
+    <input type="text" class="form-control" #txtLastName id="txtLastName" aria-describedby="emailHelp" placeholder="Last name">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Date of birth</label>
+    <input type="date" class="form-control" id="txtBirthDate" #txtBirthDate txtDob aria-describedby="emailHelp" placeholder="Date of birth">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Is User Active</label>
+    <input type="checkbox" #chkActive id="chkActive"> Active
+  </div>
+  <button type="button" (click)="onUserAddFormSubmit()" class="btn btn-primary">Add User</button>
+</form>
