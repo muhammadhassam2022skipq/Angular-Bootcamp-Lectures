@@ -1,0 +1,17 @@
+<p>main works!</p>
+
+<h1>
+  {{currentDatte | date:'short'}}
+</h1>
+<h1>
+  {{myObj | json}}
+</h1>
+<p>
+  <input type="text" #txtName>
+</p>
+<p>
+  <button type="button" (click)="changeName(txtName.value)">Change Name</button>
+</p>
+<p>
+  <app-child [user]="user"></app-child>
+</p>
