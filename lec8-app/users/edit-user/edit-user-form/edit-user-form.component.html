@@ -1,0 +1,20 @@
+<form [formGroup]="frmAddUser" (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <label for="exampleInputFullName">First Name</label>
+    <input type="text" class="form-control" formControlName="firstName" aria-describedby="emailHelp" placeholder="First name">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputFullName">Last Name</label>
+    <input type="text" class="form-control" formControlName="lastName" aria-describedby="emailHelp" placeholder="Last name">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Date of birth</label>
+    <input type="date" class="form-control" formControlName="birthDate" aria-describedby="emailHelp" placeholder="Date of birth">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Is User Active</label>
+    <input type="checkbox" formControlName="isActive"> Active
+  </div>
+  <button type="submit" class="btn btn-primary">Add User</button>
+</form>
